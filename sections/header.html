@@ -278,7 +278,7 @@
               </ul>
           </nav>
 
-          <!-- 이미지 버전 -->
+          <!-- 관련사이트 이미지 버전 -->
           <div class="dropdown flex-as-c">
               <button class="dropBtn">관련사이트</button>
 
@@ -292,6 +292,14 @@
 
               </div>
           </div>
+
+          <div class="flex-as-c">
+            <a href="#" clasdd="global_log">
+                <img src="../imgs/icon_eng.svg" alt="">
+            </a>
+          </div>
+
+
       </div>
   </header>
 
@@ -365,7 +373,8 @@
             display: block;
         }
 
-        /*  커스텀 */
+        /*---------- 커스텀 ----------*/
+
         .con-min-width {
             min-width: 1080px
         }
@@ -386,7 +395,7 @@
             border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         }
 
-        /* 로고 */
+        /*----- 로고 -----*/
         header .logo_wrap>a {
             width: 116px;
         }
@@ -395,7 +404,7 @@
             width: 100%;
         }
 
-        /* 메뉴박스 = 1차 메뉴 */
+        /*----- 메뉴박스 = 1차 메뉴 -----*/
         header .menu_box > ul > li > a {
             padding: 0 12px;
             margin: 0 12px;
@@ -421,7 +430,7 @@
             display: block;
         }
 
-        /* 메뉴박스 - 2차 메뉴 */
+        /*----- 메뉴박스 - 2차 메뉴 -----*/
         header .menu_box > ul > li > div {
             width: 100%;
             background-color: #fff;
@@ -480,7 +489,7 @@
           color: #444;
         }
 
-        /* dropdown menu */
+        /*----- dropdown menu -----*/
         header .dropdown {
           position: relative;
         }
@@ -558,6 +567,21 @@
           margin-top: -2px;
           vertical-align: middle;
         }
+
+        /* 글로벌 로고 */
+        header .global_log {
+            display: inline-block;
+            width: 20px;
+        }
+
+        header .global_log > img {
+            width: 100%;
+            display: block;
+        }
+
+         header .global_log:hover > img {
+            opacity: .4;
+         }
 
         /*----------  헤더 끝 ----------*/
     </style>
