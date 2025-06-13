@@ -295,7 +295,7 @@
 
           <!-- 글로벌 파트 -->
           <div class="flex-as-c">
-            <a href="#" clasdd="global_logo">
+            <a href="#" class="global_logo">
                 <img src="../imgs/icon_eng.svg" alt="">
             </a>
           </div>
@@ -597,8 +597,15 @@
           dropdownContent.addClass('is_active');
           $this.addClass('rotate');
         }
-      })
+      });
       
+
+      $(window).click(function(event) {
+        if (!$(event.target).closest('.dropBtn').length) {
+            $('.dropdown_content').removeClass('is_active');
+            $('.dropBtn').removeClass('rotate');
+        }
+      })
     </script>
 </body>
 
