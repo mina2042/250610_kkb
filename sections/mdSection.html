@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 구글 폰트 -->
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
@@ -37,6 +39,10 @@
   </section>
 
   <style>
+    html {
+        font-family: "Roboto", "Noto Sans KR", sans-serif;
+    }
+    
     /* 노말라이즈 */
     body,
     ul,
@@ -127,6 +133,30 @@
     .con {
         width: 1080px;
     }
+
+    /* 중간섹션 1 ~ 5 시작 */
+    .md_sec {
+        min-height: 500px;
+        border: 10px solid red;
+        display: flex;
+    }
+
+    .md_sec > div:first-child {
+        background-color: pink;
+        width: 60%;
+    }
+
+    .md_sec > div:last-child {
+        background-color: green;
+        flex-grow: 1;
+    }
+
+    .md_divider {
+        height: 32px;
+        background-color: #fafafa;
+    }
+
+    /* 중간섹션 1 ~ 5 끝 */
   </style>
 </body>
 </html>
